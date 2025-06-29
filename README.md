@@ -12,6 +12,10 @@ This MCP server provides the following tools:
 - **get_widget_data**: Get current data for all locations at once
 - **get_historical_data**: Get historical time series data for temperature, flow, and air temperature
 
+## Requirements
+
+- Node.js 18 or newer
+
 ## Installation
 
 ### Using npx (Recommended)
