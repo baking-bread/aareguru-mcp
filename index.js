@@ -8,7 +8,7 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 
 const API_BASE_URL = "https://aareguru.existenz.ch";
-const DEFAULT_APP = "mcp-aareguru-server";
+const DEFAULT_APP = "aareguru-mcp-server";
 const DEFAULT_VERSION = "1.0.0";
 
 class AareGuruServer {
