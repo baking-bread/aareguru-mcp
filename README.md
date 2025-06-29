@@ -1,4 +1,4 @@
-# MCP Aare.guru Server
+# Aare.guru MCP Server
 
 A Model Context Protocol (MCP) server that provides access to the Aare.guru API for getting water temperature and swimming conditions of the Aare river in Switzerland.
 
@@ -21,21 +21,21 @@ This MCP server provides the following tools:
 ### Using npx (Recommended)
 
 ```bash
-npx mcp-aareguru
+npx aareguru-mcp
 ```
 
 ### Global Installation
 
 ```bash
-npm install -g mcp-aareguru
-mcp-aareguru
+npm install -g aareguru-mcp
+aareguru-mcp
 ```
 
 ### Local Development
 
 ```bash
 git clone <repository-url>
-cd mcp-aareguru
+cd aareguru-mcp
 npm install
 npm start
 ```
@@ -49,7 +49,7 @@ Add the following to your Claude Desktop MCP configuration:
   "mcpServers": {
     "aareguru": {
       "command": "npx",
-      "args": ["mcp-aareguru"]
+      "args": ["aareguru-mcp"]
     }
   }
 }
@@ -61,7 +61,7 @@ Or if installed globally:
 {
   "mcpServers": {
     "aareguru": {
-      "command": "mcp-aareguru"
+      "command": "aareguru-mcp"
     }
   }
 }
@@ -145,12 +145,13 @@ This server connects to the Aare.guru API (https://aare.guru), which provides:
 - Historical data
 - Multiple monitoring locations along the Aare river
 
+
 ## License
 
-MIT
+GNU General Public License v3.0
 
 ## Credits
 
-Data provided by [Aare.guru](https://aare.guru) - a service by [Bureau für digitale Existenz](https://bureau.existenz.ch).
+Data provided by [Aare.guru](https://aare.guru) and the [BAFU](https://www.bafu.admin.ch). The API is intended for non-commercial public use only.
 
-This MCP server is not officially affiliated with Aare.guru but uses their public API with respect to their terms of service.
+This MCP server is not officially affiliated with Aare.guru but uses their public API in accordance with its terms of service.
